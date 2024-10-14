@@ -1,10 +1,9 @@
-setTimeout(() => {
-  console.log("hi");
+console.log("opado script");
+document.addEventListener("DOMContentLoaded", () => {
   const footer = document.querySelector('footer');
   if (footer) {
-    const hiddenInput = document.createElement('input');
-    hiddenInput.type = 'hidden';
-    hiddenInput.value = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
-    footer.appendChild(hiddenInput);
+    const paragraph = document.createElement('p');
+    paragraph.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+    footer.appendChild(paragraph);
   }
-}, 1000);
+});
